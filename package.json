@@ -11,7 +11,8 @@
     "build": "tsc",
     "build-storybook": "build-storybook",
     "lint": "eslint '*/**/*.{js,ts,tsx}'",
-    "lint:fix": "eslint '*/**/*.{js,ts,tsx}' --fix"
+    "lint:fix": "eslint '*/**/*.{js,ts,tsx}' --fix",
+    "semantic-release": "semantic-release"
   },
   "keywords": [],
   "author": "Henrik Fricke <henrikfricke@web.de>",
@@ -38,7 +39,8 @@
     "fork-ts-checker-webpack-plugin": "^5.0.6",
     "prettier": "^2.0.5",
     "ts-loader": "^7.0.5",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.6",
+    "semantic-release": "^17.1.1"
   },
   "peerDependencies": {
     "@types/react": "^16.9.41",
@@ -47,5 +49,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.1"
-  }
+  },
+  "version": "0.0.0-development"
 }
