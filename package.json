@@ -6,6 +6,7 @@
   "types": "dist/index.d.ts",
   "module": "dist/index.js",
   "sideEffects": false,
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "start-storybook -p 6006",
