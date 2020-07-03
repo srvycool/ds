@@ -1,6 +1,7 @@
 # @srvycool/ds
 > The design system for srvy.cool
 
+[![npm version](https://badge.fury.io/js/%40srvycool%2Fds.svg)](https://badge.fury.io/js/%40srvycool%2Fds)
 ![Main](https://github.com/srvycool/ds/workflows/Main/badge.svg)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/770880928e1d407b906818b7c84a1931)](https://www.codacy.com/gh/srvycool/ds?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=srvycool/ds&amp;utm_campaign=Badge_Grade)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/srvycool/ds) 
