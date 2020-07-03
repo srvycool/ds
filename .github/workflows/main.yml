@@ -61,7 +61,7 @@ jobs:
         uses: actions/cache@v1
         with:
           path: dist-storybook
-          key: ${{ runner.OS }}-storybook-${{ env.GITHUB_RUN_ID }}
+          key: ${{ runner.OS }}-storybook-${{ env.GITHUB_RUN_NUMBER }}
 
   release:
     runs-on: ubuntu-latest
@@ -82,7 +82,7 @@ jobs:
         uses: actions/cache@v1
         with:
           path: dist-storybook
-          key: ${{ runner.OS }}-storybook-${{ env.GITHUB_RUN_ID }}
+          key: ${{ runner.OS }}-storybook-${{ env.GITHUB_RUN_NUMBER }}
       - name: Build library
         run: yarn build
       - name: Release
