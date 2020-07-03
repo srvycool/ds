@@ -55,13 +55,13 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.OS }}-build-${{ hashFiles('yarn.lock') }}-${{ env.CACHE_VERSION }}
-      - name: Build storybook
-        run: yarn build-storybook
       - name: Cache storybook
         uses: actions/cache@v1
         with:
           path: dist-storybook
-          key: ${{ runner.OS }}-storybook-${{ env.GITHUB_RUN_NUMBER }}
+          key: ${{ runner.OS }}-storybook-${{ github.run_number }}
+      - name: Build storybook
+        run: yarn build-storybook
 
   release:
     runs-on: ubuntu-latest
@@ -78,11 +78,11 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.OS }}-build-${{ hashFiles('yarn.lock') }}-${{ env.CACHE_VERSION }}
-      - name: Restore storybook cache
+      - name: Cache storybook
         uses: actions/cache@v1
         with:
           path: dist-storybook
-          key: ${{ runner.OS }}-storybook-${{ env.GITHUB_RUN_NUMBER }}
+          key: ${{ runner.OS }}-storybook-${{ github.run_number }}
       - name: Build library
         run: yarn build
       - name: Release

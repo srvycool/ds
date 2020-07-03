@@ -1,16 +1,19 @@
 module.exports = {
-  release: {
-    branch: 'master',
-    plugins: [
-      '@semantic-release/release-notes-generator',
-      '@semantic-release/changelog',
-      '@semantic-release/git',
-      '@semantic-release/github',
-      '@semantic-release/npm',
+  "release": {
+    "branch": "master",
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@qiwi/semantic-release-gh-pages-plugin"
+    ],
+    "publish": [
+      "@semantic-release/npm",
+      "@semantic-release/github",
       [
-        '@qiwi/semantic-release-gh-pages-plugin',
+        "@qiwi/semantic-release-gh-pages-plugin",
         {
-          src: 'dist-storybook'
+          "src": "dist-storybook"
         }
       ]
     ]

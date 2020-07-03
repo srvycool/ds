@@ -12,8 +12,8 @@
     "start": "start-storybook -p 6006",
     "build": "rimraf dist && tsc",
     "build-storybook": "build-storybook -o dist-storybook",
-    "lint": "eslint '*/**/*.{js,ts,tsx}'",
-    "lint:fix": "eslint '*/**/*.{js,ts,tsx}' --fix",
+    "lint": "eslint '{src,.storybook}/**/*.{js,ts,tsx}'",
+    "lint:fix": "yarn lint --fix",
     "semantic-release": "semantic-release"
   },
   "keywords": [],
