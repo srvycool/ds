@@ -24,6 +24,23 @@ jobs:
       - name: Is the yarn.lock up-to-date?
         run: git diff --exit-code yarn.lock
 
+  test:
+    runs-on: ubuntu-latest
+    needs: dependencies
+    steps:
+      - uses: actions/checkout@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v1.1.0
+        with:
+          version: 12
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('yarn.lock') }}-${{ env.CACHE_VERSION }}
+      - name: Unit tests
+        run: yarn test
+
   lint:
     runs-on: ubuntu-latest
     needs: dependencies
@@ -82,7 +99,7 @@ jobs:
 
   release:
     runs-on: ubuntu-latest
-    needs: [dependencies, lint, build, build-storybook]
+    needs: [dependencies, test, lint, build, build-storybook]
     if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@v1
