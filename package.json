@@ -10,8 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "start-storybook -p 6006",
-    "build": "tsc",
-    "build-storybook": "build-storybook",
+    "build": "rimraf dist && tsc",
+    "build-storybook": "build-storybook -o dist-storybook",
     "lint": "eslint '*/**/*.{js,ts,tsx}'",
     "lint:fix": "eslint '*/**/*.{js,ts,tsx}' --fix",
     "semantic-release": "semantic-release"
@@ -45,6 +45,7 @@
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "rimraf": "^3.0.2",
     "semantic-release": "^17.1.1",
     "styled-components": "^5.1.1",
     "ts-loader": "^7.0.5",
