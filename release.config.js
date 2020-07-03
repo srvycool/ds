@@ -8,7 +8,7 @@ module.exports = {
     [
       '@qiwi/semantic-release-gh-pages-plugin',
       {
-        src: 'dist-storybook',
+        src: 'storybook-static',
       },
     ],
   ],
