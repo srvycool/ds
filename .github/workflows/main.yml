@@ -92,14 +92,38 @@ jobs:
       - name: Cache storybook
         uses: actions/cache@v1
         with:
-          path: dist-storybook
+          path: storybook-static
           key: ${{ runner.OS }}-storybook-${{ github.run_number }}
       - name: Build storybook
         run: yarn build-storybook
+  
+  percy:
+    runs-on: ubuntu-latest
+    needs: [build-storybook]
+    steps:
+      - uses: actions/checkout@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v1.1.0
+        with:
+          version: 12
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('yarn.lock') }}-${{ env.CACHE_VERSION }}
+      - name: Cache storybook
+        uses: actions/cache@v1
+        with:
+          path: storybook-static
+          key: ${{ runner.OS }}-storybook-${{ github.run_number }}
+      - name: Percy
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+        run: yarn snapshot
 
   release:
     runs-on: ubuntu-latest
-    needs: [dependencies, test, lint, build, build-storybook]
+    needs: [dependencies, test, lint, build, build-storybook, percy]
     if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@v1
@@ -115,7 +139,7 @@ jobs:
       - name: Cache storybook
         uses: actions/cache@v1
         with:
-          path: dist-storybook
+          path: storybook-static
           key: ${{ runner.OS }}-storybook-${{ github.run_number }}
       - name: Build library
         run: yarn build

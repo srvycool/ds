@@ -11,10 +11,11 @@
     "test": "jest",
     "start": "start-storybook -p 6006",
     "build": "rimraf dist && tsc",
-    "build-storybook": "build-storybook -o dist-storybook",
+    "build-storybook": "build-storybook",
     "lint": "eslint '{src,.storybook}/**/*.{js,ts,tsx}'",
     "lint:fix": "yarn lint --fix",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "snapshot": "percy-storybook --widths=320,1280"
   },
   "keywords": [],
   "author": "Henrik Fricke <henrikfricke@web.de>",
@@ -25,6 +26,7 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.10.4",
+    "@percy/storybook": "^3.3.0",
     "@qiwi/semantic-release-gh-pages-plugin": "^4.0.0",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
