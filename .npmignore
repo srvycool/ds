@@ -6,3 +6,4 @@ src
 .prettierrc.js
 tsconfig.json
 .github
+release.config.js
