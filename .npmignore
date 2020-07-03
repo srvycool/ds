@@ -5,3 +5,4 @@ src
 .gitignore
 .prettierrc.js
 tsconfig.json
+.github

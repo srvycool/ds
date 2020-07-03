@@ -19,7 +19,7 @@
   "keywords": [],
   "author": "Henrik Fricke <henrikfricke@web.de>",
   "repository": {
-    "url": "https://github.com/srvycool/ds"
+    "url": "git+https://github.com/srvycool/ds.git"
   },
   "license": "MIT",
   "dependencies": {},
@@ -57,5 +57,9 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/srvycool/ds/issues"
+  },
+  "homepage": "https://github.com/srvycool/ds#readme"
 }
