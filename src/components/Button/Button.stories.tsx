@@ -7,6 +7,6 @@ export default {
   component: Button,
 };
 
-export const Text: React.FC = () => (
-  <Button onClick={action('clicked')}>Hello Button</Button>
+export const Primary: React.FC = () => (
+  <Button onClick={action('clicked')}>Button</Button>
 );

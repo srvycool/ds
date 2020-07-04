@@ -42,15 +42,15 @@ declare module 'styled-components' {
     };
 
     space: {
-      zero: number;
-      xxs: number;
-      xs: number;
-      s: number;
-      m: number;
-      l: number;
-      xl: number;
-      xxl: number;
-      xxxl: number;
+      zero: string;
+      xxs: string;
+      xs: string;
+      s: string;
+      m: string;
+      l: string;
+      xl: string;
+      xxl: string;
+      xxxl: string;
     };
 
     shadows: {
@@ -58,7 +58,7 @@ declare module 'styled-components' {
     };
 
     radii: {
-      primary: number;
+      primary: string;
     };
 
     borders: {
@@ -70,6 +70,6 @@ declare module 'styled-components' {
       secondary: string;
     };
 
-    fontSizes: number[];
+    fontSizes: string[];
   }
 }

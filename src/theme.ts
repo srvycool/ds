@@ -33,15 +33,15 @@ const mediaQueries = {
 };
 
 const space = {
-  zero: 0,
-  xxs: 4,
-  xs: 8,
-  s: 12,
-  m: 16,
-  l: 20,
-  xl: 40,
-  xxl: 60,
-  xxxl: 120,
+  zero: '0',
+  xxs: '4px',
+  xs: '8px',
+  s: '12px',
+  m: '16px',
+  l: '20px',
+  xl: '40px',
+  xxl: '60px',
+  xxxl: '120px',
 };
 
 const shadows = {
@@ -49,7 +49,7 @@ const shadows = {
 };
 
 const radii = {
-  primary: 8,
+  primary: '8px',
 };
 
 const borders = {
@@ -61,7 +61,7 @@ const fonts = {
   secondary: 'Montserrat',
 };
 
-const fontSizes = [12, 16, 18, 20, 22, 24];
+const fontSizes = ['12px', '16px', '18px', '20px', '22px', '24px'];
 
 export const theme: DefaultTheme = {
   colors,
