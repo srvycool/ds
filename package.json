@@ -39,6 +39,7 @@
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.0",
+    "@types/styled-system": "^5.1.9",
     "@typescript-eslint/eslint-plugin": "^3.5.0",
     "@typescript-eslint/parser": "^3.5.0",
     "babel-loader": "^8.1.0",
@@ -56,17 +57,24 @@
     "rimraf": "^3.0.2",
     "semantic-release": "^17.1.1",
     "styled-components": "^5.1.1",
+    "styled-system": "^5.1.5",
     "ts-jest": "^26.1.1",
     "ts-loader": "^7.0.5",
+    "typeface-hammersmith-one": "^0.0.72",
+    "typeface-montserrat": "^0.0.75",
     "typescript": "^3.9.6"
   },
   "peerDependencies": {
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.0",
+    "@types/styled-system": "^5.1.9",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "styled-system": "^5.1.5",
+    "typeface-hammersmith-one": "^0.0.72",
+    "typeface-montserrat": "^0.0.75"
   },
   "bugs": {
     "url": "https://github.com/srvycool/ds/issues"
