@@ -36,7 +36,7 @@ const variantMapping: {
   caption: 'span',
 };
 
-const UnstyledTypography = styled.span<TypographyProps>`
+const StyledTypography = styled.span<TypographyProps>`
   margin: 0;
   ${color}
   ${space}
@@ -50,7 +50,7 @@ export const Typography: React.FC<StyledComponentProps<
   never
 >> = ({ as, variant, ...props }) => {
   return (
-    <UnstyledTypography
+    <StyledTypography
       as={as || variantMapping[variant]}
       variant={variant}
       {...props}
