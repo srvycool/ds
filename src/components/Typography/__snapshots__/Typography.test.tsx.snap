@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography body1 should match snapshot 1`] = `
+.c0 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: Montserrat;
+}
+
+<div>
+  <span
+    class="c0"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`Typography body2 should match snapshot 1`] = `
+.c0 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: Montserrat;
+}
+
+<div>
+  <span
+    class="c0"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`Typography caption should match snapshot 1`] = `
+.c0 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: Montserrat;
+  text-transform: uppercase;
+}
+
+<div>
+  <span
+    class="c0"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`Typography heading1 should match snapshot 1`] = `
+.c0 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: Hammersmith One;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    Text
+  </h1>
+</div>
+`;
+
+exports[`Typography heading2 should match snapshot 1`] = `
+.c0 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.2;
+  font-family: Hammersmith One;
+}
+
+<div>
+  <h2
+    class="c0"
+  >
+    Text
+  </h2>
+</div>
+`;
+
+exports[`Typography heading3 should match snapshot 1`] = `
+.c0 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: Hammersmith One;
+}
+
+<div>
+  <h2
+    class="c0"
+  >
+    Text
+  </h2>
+</div>
+`;
+
+exports[`Typography subtitle should match snapshot 1`] = `
+.c0 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: Montserrat;
+}
+
+<div>
+  <span
+    class="c0"
+  >
+    Text
+  </span>
+</div>
+`;
