@@ -1,4 +1,112 @@
-import { DefaultTheme } from 'styled-components';
+export interface Theme {
+  colors: {
+    primary900: string;
+    primary800: string;
+    primary700: string;
+    primary600: string;
+    primary500: string;
+    primary400: string;
+    primary300: string;
+    primary200: string;
+    primary100: string;
+
+    grey900: string;
+    grey800: string;
+    grey700: string;
+    grey600: string;
+    grey500: string;
+    grey400: string;
+    grey300: string;
+    grey200: string;
+    grey100: string;
+    grey000: string;
+  };
+
+  breakpoints: string[];
+
+  mediaQueries: {
+    sm: string;
+    md: string;
+    lg: string;
+    xl: string;
+  };
+
+  space: {
+    zero: string;
+    xxs: string;
+    xs: string;
+    s: string;
+    m: string;
+    l: string;
+    xl: string;
+    xxl: string;
+    xxxl: string;
+  };
+
+  shadows: {
+    primary: string;
+  };
+
+  radii: {
+    primary: string;
+  };
+
+  borders: {
+    primary: string;
+  };
+
+  fonts: {
+    primary: string;
+    secondary: string;
+  };
+
+  fontSizes: string[];
+
+  typography: {
+    heading1: {
+      fontSize: string;
+      lineHeight: string;
+      fontFamily: string;
+    };
+
+    heading2: {
+      fontSize: string;
+      lineHeight: string;
+      fontFamily: string;
+    };
+
+    heading3: {
+      fontSize: string;
+      lineHeight: string;
+      fontFamily: string;
+    };
+
+    subtitle: {
+      fontSize: string;
+      lineHeight: string;
+      fontFamily: string;
+    };
+
+    body1: {
+      fontSize: string;
+      lineHeight: string;
+      fontFamily: string;
+    };
+
+    body2: {
+      fontSize: string;
+      lineHeight: string;
+      fontFamily: string;
+    };
+
+    caption: {
+      fontSize: string;
+      lineHeight: string;
+      fontFamily: string;
+      textTransform: string;
+    };
+  };
+}
 
 const colors = {
   primary900: '#680C46',
@@ -57,13 +165,58 @@ const borders = {
 };
 
 const fonts = {
-  primary: 'HammersmithOne',
+  primary: 'Hammersmith One',
   secondary: 'Montserrat',
 };
 
 const fontSizes = ['12px', '16px', '18px', '20px', '22px', '24px'];
 
-export const theme: DefaultTheme = {
+const typography = {
+  heading1: {
+    fontSize: '24px',
+    lineHeight: '1.2',
+    fontFamily: fonts.primary,
+  },
+
+  heading2: {
+    fontSize: '22px',
+    lineHeight: '1.2',
+    fontFamily: fonts.primary,
+  },
+
+  heading3: {
+    fontSize: '20px',
+    lineHeight: '1.2',
+    fontFamily: fonts.primary,
+  },
+
+  subtitle: {
+    fontSize: '18px',
+    lineHeight: '1.2',
+    fontFamily: fonts.secondary,
+  },
+
+  body1: {
+    fontSize: '16px',
+    lineHeight: '1.2',
+    fontFamily: fonts.secondary,
+  },
+
+  body2: {
+    fontSize: '12px',
+    lineHeight: '1.2',
+    fontFamily: fonts.secondary,
+  },
+
+  caption: {
+    fontSize: '12px',
+    lineHeight: '1.2',
+    fontFamily: fonts.secondary,
+    textTransform: 'uppercase',
+  },
+};
+
+export const theme: Theme = {
   colors,
   breakpoints,
   mediaQueries,
@@ -73,4 +226,5 @@ export const theme: DefaultTheme = {
   borders,
   fonts,
   fontSizes,
+  typography,
 };
