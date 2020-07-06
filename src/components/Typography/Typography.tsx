@@ -4,8 +4,10 @@ import {
   space,
   color,
   variant,
+  typography,
   TextColorProps,
-  MarginBottomProps,
+  SpaceProps,
+  TextAlignProps,
 } from 'styled-system';
 import { Theme } from '../../theme';
 
@@ -22,7 +24,8 @@ export type TypographyProps = {
   as?: keyof JSX.IntrinsicElements;
   variant: TypographyVariant;
 } & TextColorProps<Theme> &
-  MarginBottomProps<Theme>;
+  SpaceProps<Theme> &
+  TextAlignProps<Theme>;
 
 const variantMapping: {
   [index in TypographyVariant]: keyof JSX.IntrinsicElements;
@@ -40,6 +43,7 @@ const StyledTypography = styled.span<TypographyProps>`
   margin: 0;
   ${color}
   ${space}
+  ${typography}
   ${variant({ scale: 'typography' })}
 `;
 
