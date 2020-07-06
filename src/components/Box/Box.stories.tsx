@@ -27,7 +27,7 @@ export const All: React.FC = () => (
     </Box>
     <Box
       display="flex"
-      flexDirection="row"
+      flexDirection={['column', 'row']}
       justifyContent="space-between"
       alignItems="center"
       padding="xl"
@@ -36,7 +36,13 @@ export const All: React.FC = () => (
       boxShadow="primary"
       marginBottom="m"
     >
-      <Typography variant="body1" color="grey900">
+      <Typography
+        variant="body1"
+        color="grey900"
+        marginBottom={['l', 'zero']}
+        marginRight={['zero', 'l']}
+        textAlign={['center', 'left']}
+      >
         Quis sit pariatur culpa anim minim quis eiusmod pariatur veniam nostrud
         quis elit.
       </Typography>
