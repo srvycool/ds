@@ -4,9 +4,8 @@ import {
   space,
   color,
   shadow,
-  boxShadow,
   flexbox,
-  display,
+  layout,
   border,
   BackgroundColorProps,
   MarginBottomProps,
@@ -14,8 +13,8 @@ import {
   PaddingProps,
   BoxShadowProps,
   FlexboxProps,
-  DisplayProps,
   BorderProps,
+  LayoutProps,
 } from 'styled-system';
 import { Theme } from '../../theme';
 
@@ -25,9 +24,9 @@ export type BoxProps = BackgroundColorProps<Theme> &
   PaddingProps<Theme> &
   BoxShadowProps<Theme> &
   FlexboxProps<Theme> &
-  DisplayProps<Theme> &
-  BorderProps<Theme>;
+  BorderProps<Theme> &
+  LayoutProps<Theme>;
 
 export const Box = styled.div<BoxProps>(
-  compose(color, space, shadow, boxShadow, flexbox, display, border)
+  compose(color, space, shadow, flexbox, border, layout)
 );
