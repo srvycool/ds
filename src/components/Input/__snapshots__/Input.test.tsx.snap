@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input without label should match snapshot 1`] = `
+.c0 {
+  display: block;
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: block;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.06),0px 1px 3px rgba(0,0,0,0.1);
+  border: 2px solid #E6DFE1;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-transition: 100ms border-color ease-in-out;
+  transition: 100ms border-color ease-in-out;
+}
+
+.c1:focus-within {
+  border-color: #DA4167;
+}
+
+.c2 {
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: Montserrat;
+  color: #493C3F;
+  border: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.c2:focus {
+  outline: none;
+}
+
+<div>
+  <label
+    class="c0"
+    display="block"
+  >
+    <span
+      class="c1"
+      display="block"
+      width="100%"
+    >
+      <input
+        class="c2"
+        value="Non culpa ullamco est laboris pariatur."
+      />
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Input without label should match snapshot 2`] = `
+.c0 {
+  display: block;
+  box-sizing: border-box;
+}
+
+.c1 {
+  margin: 0;
+  color: #7D666C;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: Montserrat;
+  text-transform: uppercase;
+}
+
+.c2 {
+  display: block;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.06),0px 1px 3px rgba(0,0,0,0.1);
+  border: 2px solid #E6DFE1;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-transition: 100ms border-color ease-in-out;
+  transition: 100ms border-color ease-in-out;
+}
+
+.c2:focus-within {
+  border-color: #DA4167;
+}
+
+.c3 {
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: Montserrat;
+  color: #493C3F;
+  border: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+<div>
+  <label
+    class="c0"
+    display="block"
+  >
+    <span
+      class="c1"
+      color="grey800"
+      display="block"
+    >
+      With Label
+    </span>
+    <span
+      class="c2"
+      display="block"
+      width="100%"
+    >
+      <input
+        class="c3"
+        value="Non culpa ullamco est laboris pariatur."
+      />
+    </span>
+  </label>
+</div>
+`;
