@@ -1,9 +1,11 @@
 import React from 'react';
 import { Box } from '../Box/Box';
 import styled, { StyledComponentProps } from 'styled-components';
+import { MarginBottomProps } from 'styled-system';
 import { Theme } from '../../theme';
 
-export type TextareaProps = StyledComponentProps<'textarea', Theme, {}, never>;
+export type TextareaProps = StyledComponentProps<'textarea', Theme, {}, never> &
+  MarginBottomProps<Theme>;
 
 const StyledBox = styled(Box)`
   transition: 100ms border-color ease-in-out;
@@ -26,7 +28,10 @@ const StyledTextarea = styled.textarea`
   }
 `;
 
-export const Textarea: React.FC<TextareaProps> = (props) => {
+export const Textarea: React.FC<TextareaProps> = ({
+  marginBottom,
+  ...props
+}) => {
   return (
     <StyledBox
       boxShadow="primary"
@@ -35,6 +40,7 @@ export const Textarea: React.FC<TextareaProps> = (props) => {
       width="100%"
       borderRadius="primary"
       position="relative"
+      marginBottom={marginBottom}
     >
       <StyledTextarea {...props} />
     </StyledBox>
