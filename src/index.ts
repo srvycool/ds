@@ -6,5 +6,6 @@ export * from './components/LogoSymbol/LogoSymbol';
 export * from './components/Textarea/Textarea';
 export * from './components/ThemeProvider/ThemeProvider';
 export * from './components/Typography/Typography';
+export * from './components/RadioButton/RadioButton';
 
 export * from './theme';
