@@ -29,7 +29,7 @@
     "@percy/storybook": "^3.3.0",
     "@qiwi/semantic-release-gh-pages-plugin": "^4.0.0",
     "@storybook/addon-actions": "^5.3.19",
-    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-links": "^6.0.3",
     "@storybook/addons": "^6.0.3",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^5.3.19",
