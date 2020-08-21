@@ -1605,15 +1605,15 @@
     uuid "^8.0.0"
 
 "@storybook/addon-links@^6.0.3":
-  version "6.0.12"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.0.12.tgz#1d87aa3c3b167681831f329c80426bdd5d176d62"
-  integrity sha512-qc5fkfwP8BWEhXp0eA0VnK8UB9OyVve0itx109st6Y1q8JT7ruDrI2E1V/b5AjUEQDFTRA7yekInKnes2zLefA==
+  version "6.0.16"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.0.16.tgz#2f81545f1593718cf720cd399635f890a1f3c916"
+  integrity sha512-5rQLzrjqQWmukBAIYghrQKZUrz/X9bx83DSh0W3RH+y1X+MJguah0WxbARePtJxggwb0s2rkoE/oR/uFePO+Pg==
   dependencies:
-    "@storybook/addons" "6.0.12"
-    "@storybook/client-logger" "6.0.12"
-    "@storybook/core-events" "6.0.12"
+    "@storybook/addons" "6.0.16"
+    "@storybook/client-logger" "6.0.16"
+    "@storybook/core-events" "6.0.16"
     "@storybook/csf" "0.0.1"
-    "@storybook/router" "6.0.12"
+    "@storybook/router" "6.0.16"
     "@types/qs" "^6.9.0"
     core-js "^3.0.1"
     global "^4.3.2"
@@ -1650,7 +1650,7 @@
     global "^4.3.2"
     regenerator-runtime "^0.13.3"
 
-"@storybook/addons@^6.0.3":
+"@storybook/addons@6.0.16", "@storybook/addons@^6.0.3":
   version "6.0.16"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-6.0.16.tgz#a20a219bd5b1474ad02b92e79a74652898a684d9"
   integrity sha512-jGMaOJYTM2yZeX1tI6whEn+4xpI1aAybZBrc+OD21CcGoQrbF/jplZMq7xKI0Y6vOMguuTGulpUNCezD3LbBjA==
